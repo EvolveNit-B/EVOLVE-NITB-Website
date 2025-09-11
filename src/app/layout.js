@@ -13,7 +13,7 @@ export const metadata = {
   description:
     "Evolve is an interdisciplinary technical club at Maulana Azad National Institute of Technology, Bhopal, driven by hands-on learning and innovative problem-solving. It welcomes students passionate about robotics, mechanical, electrical, and software development, and has earned recognition beyond campus with numerous prizes and achievements.",
   icons: {
-    icon: "/Logo/Evolve-Logo-circle.png",
+    icon: "https://evolve.nitb.in/Logo/Evolve-Logo-circle.ico",
   },
   keywords: [
     "Techincal Club of MANIT Bhopal",
