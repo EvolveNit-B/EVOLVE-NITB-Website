@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.evolve.nitb.in
+
+# Sitemaps
+Sitemap: https://www.evolve.nitb.in/sitemap.xml
