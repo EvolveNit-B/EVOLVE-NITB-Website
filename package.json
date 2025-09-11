@@ -10,6 +10,7 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "@vercel/speed-insights": "^1.2.0",
     "axios": "^1.11.0",
     "framer-motion": "^12.23.12",
     "googleapis": "^155.0.0",

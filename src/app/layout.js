@@ -1,6 +1,7 @@
 // import { Roboto } from "next/font/google";
 import "./globals.css";
 import ScrollToTop from "./components/Scroll";
+import {SpeedInsights} from '@vercel/speed-insights/next'
 
 // const roboto = Roboto({
 //   subsets: ["latin"],
@@ -95,6 +96,7 @@ export default function RootLayout({ children }) {
       <body className="antialiased h-dvh w-full">
         {children}
         <ScrollToTop />
+        <SpeedInsights />
       </body>
     </html>
   );
