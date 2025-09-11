@@ -51,7 +51,7 @@ function LoadingPage() {
             }}
             animate={{ x: "70vw", opacity: 1, blur: "0px", scale: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
-            src="Evolve_logo.png"
+            src="Evolve_Logo.png"
             className="scale-25 -mt-40"
           />
         </div>
@@ -110,7 +110,7 @@ function LoadingPage() {
               duration: 2,
               delay: 0.5,
             }}
-            src="Evolve_logo.png"
+            src="Evolve_Logo.png"
             className="w-80 h-35"
           />
         </motion.div>

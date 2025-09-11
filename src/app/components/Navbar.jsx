@@ -44,7 +44,7 @@ const Navbar = () => {
       >
         <a href="/">
           <img
-            src="/Evolve_logo.png"
+            src="/Evolve_Logo.png"
             className="md:h-12 h-8 w-auto object-contain"
             alt="Evolve Logo"
           />
@@ -106,7 +106,7 @@ const Navbar = () => {
               <div className="flex items-center justify-between p-6 border-b  border-black bg-black">
                 <a href="/">
                   <img
-                    src="/Evolve_logo.png"
+                    src="/Evolve_Logo.png"
                     className="h-8 w-auto object-contain"
                     alt="Evolve Logo"
                   />

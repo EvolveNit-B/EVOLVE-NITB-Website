@@ -45,7 +45,7 @@ function Gallery_bento() {
             <motion.img
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
-              src="/Evolve_logo.png"
+              src="/Evolve_Logo.png"
               alt="Evolve_Logo"
             />
           </div>
