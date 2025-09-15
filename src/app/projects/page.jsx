@@ -52,7 +52,7 @@ export default function Projects() {
         "Govind Bansal",
       ],
       longDescription:
-        "This e-bicycle integrates hardware and IoT components like ESP32 for real-time data acquisition, including speed, battery level, and location via GPS. It features a Pedal Assist System (PAS) for energy-efficient riding, along with a regenerative braking system and solar charging to extend battery life. The app interface provides live tracking, route history, and performance analytics, making it a sustainable and smart commuting option.",
+        "This electric car conversion repurposes a scrap Maruti IC engine vehicle into a sustainable EV, integrating hardware and control systems for efficient performance. Powered by rechargeable batteries, it can travel up to 100 km at a steady speed of 70 km/h. The design incorporates regenerative braking to optimize energy use, along with smart monitoring for performance and range. Developed within three months, it represents an eco-friendly and innovative approach to green mobility.",
     },
     {
       title: "Electric Bicycle",
