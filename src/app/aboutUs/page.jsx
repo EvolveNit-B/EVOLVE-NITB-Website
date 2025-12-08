@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
-import LabSection from "../components/LabSection"; 
+import LabSection from "../components/LabSection";
 import CollaborateSection from "../components/CollaborateSection";
 import Footer from "../components/Footer";
 
@@ -10,13 +10,15 @@ export default function aboutUs() {
   return (
     <>
       <section className="relative w-full min-h-screen flex items-center justify-center text-center">
-        <Navbar />
+        <div className="text-left">
+          <Navbar />
+        </div>
         <motion.div
           className="absolute inset-0 bg-black overflow-hidden"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
-          >
+        >
           <div className="absolute inset-0 bg-radial from-white/10 via-black/60 to-black/98"></div>
           <img
             src="/bg_website copy.jpg"
@@ -60,5 +62,3 @@ export default function aboutUs() {
     </>
   );
 }
-
-
