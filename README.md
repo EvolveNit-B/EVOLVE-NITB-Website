@@ -4,7 +4,7 @@ A modern, high-performance website built for EVOLVE NIT-B using Next.js 15 with 
 
 ## 📋 Project Overview
 
-This is the official website for EVOLVE (Entrepreneurship and Venture Oriented Learning for Varied Experiences) at NIT Bhopal. The website showcases events, projects, team information, and provides a platform for community engagement.
+This is the official website for EVOLVE (The interdisiplinary club of NIT Bhopal) at NIT Bhopal. The website showcases events, projects, team information, and provides a platform for community engagement.
 
 **Version:** 0.1.0  
 **Last Updated:** December 2025
