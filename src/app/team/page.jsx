@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Card from "../components/TeamMemberCard";
+import TeamMemberCard from "../components/TeamMemberCard";
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import { Founder } from "../data/team";
@@ -69,7 +69,7 @@ const page = () => {
                 variants={cardVariants}
                 className="flex-shrink-0"
               >
-                <Card member={member} />
+                <TeamMemberCard member={member} />
               </motion.div>
             ))}
           </motion.div>
@@ -98,7 +98,7 @@ const page = () => {
                 variants={cardVariants}
                 className="flex-shrink-0"
               >
-                <Card member={member} />
+                <TeamMemberCard member={member} />
               </motion.div>
             ))}
           </motion.div>

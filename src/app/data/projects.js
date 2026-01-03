@@ -1,5 +1,4 @@
 import {
-  ExternalLink,
   Car,
   Zap,
   Bot,
@@ -7,6 +6,9 @@ import {
   Plane,
   Compass,
   Anchor,
+  Plant,
+  Sprout,
+  Bird,
 } from "lucide-react";
 
 export const projects = [
@@ -64,9 +66,9 @@ export const projects = [
       "A group of autonomous drones operate collaboratively in a swarm architecture using DroneKit-Python for mission planning and MAVLink communication. A master drone coordinates the slaves with real-time telemetry, enabling synchronized movement and obstacle avoidance. Color detection and vision-based object tracking support dynamic payload delivery with servo grippers. The system models real-world applications like coordinated search-and-rescue and warehouse automation.",
   },
   {
-    title: "Semi Autonomous Submarine",
+    title: "Fully Autonomous Submarine",
     description:
-      "A semi-autonomous underwater vehicle with 3D motion. Integrates LiDAR, FPV camera, GPS, Raspberry Pi 4, and real-time data logging for aquatic exploration and mapping.",
+      "A fully autonomous biomimetic underwater robot using AI vision and fin-based propulsion for silent navigation, marine life detection, and aquatic mapping.",
     icon: <Anchor className="w-6 h-6" />,
     tags: ["Raspberry Pi", "LiDAR", "Computer Vision"],
     image: "/projects/submarine.jpg",
@@ -76,11 +78,15 @@ export const projects = [
       "Shivi Mishra",
       "Shantanu Chouksey",
       "Akash Yadav",
+      "Kunal Pawar",
+      "Lochan Patil",
+      "Ankita Garg",
       "Khushi Chouhan",
       "Disha Mittal",
+      "Mittal Tulo",
     ],
     longDescription:
-      "This semi-autonomous underwater vehicle is designed for real-time aquatic exploration in controlled environments like lakes or reservoirs. It uses a Raspberry Pi 4 to control movement in 3D space, with feedback from IMU sensors and live feed from an FPV camera. LiDAR and sonar systems aid in mapping surroundings and avoiding obstacles. GPS and onboard storage log movement data for later analysis, suitable for research and environmental monitoring.",
+      "This fully autonomous underwater vehicle is designed for real-time aquatic exploration in controlled environments such as lakes and reservoirs. Powered by a Raspberry Pi 4, the system autonomously controls 3D motion using closed-loop feedback from IMU sensors and computer vision inputs from an FPV camera. Integrated LiDAR and sonar systems enable accurate environment mapping, obstacle detection, and collision avoidance without human intervention. GPS support and onboard data storage allow continuous logging of navigation paths, sensor data, and mission parameters for post-mission analysis. The platform is well-suited for research, environmental monitoring, and autonomous underwater surveying applications.",
   },
   {
     title: "Maze Solver Robot",
@@ -171,7 +177,7 @@ export const projects = [
   {
     title: "RFID Door Lock System",
     description:
-      "A secure access solution combining RFID, Arduino, Firebase, and NodeMCU. Enables efficient authentication, I2C communication, and cloud-based access management for smart environments.",
+      "A reliable access control system integrating RFID, Arduino, Firebase, and NodeMCU. Supports authentication, I2C communication, and cloud-based access management for smart environments.",
     icon: <Lock className="w-6 h-6" />,
     tags: ["Arduino", "RFID", "Firebase", "IoT"],
     image: "/projects/RFID.jpeg",
@@ -179,5 +185,38 @@ export const projects = [
     people: ["Manav Sharma"],
     longDescription:
       "The system uses RFID readers connected to an Arduino microcontroller to authenticate users via pre-registered RFID tags. NodeMCU handles network communication and updates Firebase in real-time for remote access monitoring and control. Data integrity is maintained via I2C protocol. It's ideal for smart home or institutional setups requiring secure, scalable, and cloud-managed access control.",
+  },
+  {
+    title: "Kashyap",
+    description:
+      "An AI-powered, 5G-enabled autonomous seed sowing machine designed for precision farming. Adapts dynamically to soil, seed, and weather conditions while providing real-time monitoring through a mobile application to improve crop yield.",
+    icon: <Sprout className="w-6 h-6" />,
+    tags: ["AI", "5G", "IoT", "Embedded Systems"],
+    image: "/projects/kashyap.jpeg",
+    gradient: "from-green-500/20 to-teal-500/20",
+    people: [
+      "Akshat Agarwal",
+      "Akash Yadav",
+      "Govind Bansal",
+      "Gaurav Shukla",
+      "Himanshu Bagri",
+      "Manu Suneli",
+      "Khushi Chouhan",
+      "Kuhu Agrawal",
+    ],
+    longDescription:
+      "Kashyap is an intelligent autonomous seed sowing solution built to make precision agriculture accessible to Indian farmers. Leveraging AI-driven decision-making and 5G connectivity, the system ensures accurate seed placement based on real-time analysis of soil characteristics, seed type, and prevailing weather conditions. Integrated sensors continuously collect field data, allowing the machine to self-adjust sowing depth, spacing, and speed for optimal results. A companion mobile application enables farmers to monitor operations, track performance metrics, and receive actionable insights remotely. By automating critical sowing tasks and reducing manual dependency, Kashyap enhances productivity, minimizes resource wastage, and supports sustainable, smart farming practices.",
+  },
+  {
+    title: "Ornithopter",
+    description:
+      "A bio-inspired ornithopter featuring coordinated flapping wings, designed to achieve efficient aerodynamic performance, precise servo-based control, and optimized mechanical transmission for low-noise aerial operation.",
+    icon: <Bird className="w-6 h-6" />,
+    tags: ["Aerodynamics", "Bio-inspired", "Servo Control"],
+    image: "/projects/Ornithopter.jpeg",
+    gradient: "from-blue-500/20 to-sky-500/20",
+    people: ["Kunal Pawar", "Gaurav Shukla", "Khushi Chouhan", "Shruti Somani"],
+    longDescription:
+      "This project focuses on the design and development of a bio-inspired ornithopter that replicates the flapping-wing flight mechanics of birds. The system emphasizes aerodynamic efficiency through carefully engineered wing geometry and synchronized flapping motion. Servo-based control mechanisms enable precise modulation of wing amplitude and frequency, while an optimized mechanical transmission ensures smooth power transfer and structural reliability. Due to its low acoustic signature and bird-like visual profile, the ornithopter is explored as a discreet aerial surveillance platform, particularly suited for restricted or anti-drone environments where conventional UAVs are easily detected. The project demonstrates the potential of flapping-wing aerial vehicles as an alternative to traditional propeller-driven drones for stealth and specialized reconnaissance applications.",
   },
 ];
