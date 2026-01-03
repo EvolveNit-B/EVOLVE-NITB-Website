@@ -72,7 +72,7 @@ const Navbar = () => {
           className="px-6 py-3 bg-gradient-to-r from-emerald-500 to-lime-600 text-white font-semibold text-sm tracking-wide rounded-md shadow-lg hover:shadow-xl transition-all duration-300"
           onClick={() => router.push("/#contact")}
         >
-          Contact Us
+          Collab and Build with us
         </motion.button>
       </div>
 
@@ -153,7 +153,7 @@ const Navbar = () => {
                   className="w-full px-6 py-4 bg-emerald-500 hover:bg-emerald-600 text-black font-semibold rounded-xl shadow-lg transition-all duration-200 hover:shadow-emerald-500/25 "
                   onClick={() => router.push("/#contact")}
                 >
-                  Contact Us
+                  Collab and Build with us
                 </motion.button>
               </motion.div>
               <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-500 to-green-400"></div>
