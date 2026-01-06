@@ -66,7 +66,7 @@ export const projects = [
       "A group of autonomous drones operate collaboratively in a swarm architecture using DroneKit-Python for mission planning and MAVLink communication. A master drone coordinates the slaves with real-time telemetry, enabling synchronized movement and obstacle avoidance. Color detection and vision-based object tracking support dynamic payload delivery with servo grippers. The system models real-world applications like coordinated search-and-rescue and warehouse automation.",
   },
   {
-    title: "Fully Autonomous Submarine",
+    title: "Fully Autonomous Biomimetic underwater Robot",
     description:
       "A fully autonomous biomimetic underwater robot using AI vision and fin-based propulsion for silent navigation, marine life detection, and aquatic mapping.",
     icon: <Anchor className="w-6 h-6" />,

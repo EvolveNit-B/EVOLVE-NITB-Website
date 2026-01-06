@@ -180,7 +180,7 @@ export const PreFinalYear = [
     src: "/Team/Pre_Final_Year/20240211_172514 - Lochan Patil.jpg",
     name: "Lochan Patil",
     instagram:
-      "https://www.instagram.com/reel/DGoEw-Coknc/?igsh=MW4zc2puc2l0bWh1Ng==",
+      "https://www.instagram.com/lochan_patil?igsh=MThvNmFibjJ3c2d6Ng==",
     linkedin: "https://www.linkedin.com/in/lochan-patil-a15182291/",
     position: "Sponsorship & IR Head",
   },
