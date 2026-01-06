@@ -55,118 +55,117 @@ const Card = (props) => (
         </p>
       </div>
       <br />
-      <p className="text-green-500 font-semibold absolute bottom-2 left-3 pt-3">{props.year}</p>
+      <p className="text-green-500 font-semibold absolute bottom-2 left-3 pt-3">
+        {props.year}
+      </p>
     </div>
   </motion.div>
 );
 
 const AchievementsSection = () => {
-  
-    const achievements = [
-      {
-        title: "Gujarat Robofest 4.0",
-        organization: "Gujarat Robofest",
-        achievement: "Grand Finale Winners",
-        description:
-          "Two teams from Evolve, the Fun Robotics & Maze Solving Robot team and the Swarm Robot team, advanced to the ROBOFEST Gujarat 4.0 Grand Finale, winning a ₹2 Lakh cash prize per team for their technical prowess.",
-        year: "2024",
-        level: "National",
-        icon: <Award className="w-6 h-6" />,
-        image: "/Achievement/guj_robofest.png",
-      },
-      {
-        title: "ISRO-IROC",
-        organization: "ISRO",
-        achievement: "First Round Qualified",
-        description:
-          "EVOLVE cleared IROC’s first round, demonstrating robotics and design expertise, proving international competitiveness, technical strength, and readiness for advanced global challenges.",
-        year: "2024",
-        level: "International",
-        icon: <Target className="w-6 h-6" />,
-        image: "/projects/swarm_drones.jpg",
-      },
-      {
-        title: "TATA Technologies InnoVent",
-        organization: "TATA Technologies",
-        achievement: "National Finalists",
-        description:
-          "EVOLVE reached InnoVent national finals with logistics management innovation, recognized for efficiency and practicality, placing members among India’s finest innovators and visionaries.",
-        year: "2024",
-        level: "National",
-        icon: <Star className="w-6 h-6" />,
-        image: "https://evolve-nitb.vercel.app/Achievements/tata_inno.jpg",
-      },
-      {
-        title: "5G Innovation Hackathon",
-        organization:
-          " Department of Telecommunication, Ministry of Communication (Government of India)",
-        achievement: "Grand Finalists",
-        description:
-          "Evolve, MANIT Bhopal, advanced to the 5G Hackathon finals, ranked 45th in RISC-V, and made the C2S quarterfinals.",
-        year: "2024",
-        level: "National",
-        icon: <Star className="w-6 h-6" />,
-        image: "/Achievement/5G_Hackathon.jpg",
-      },
-      {
-        title: "Bajaj Torq and Ohm",
-        organization:
-          "Bajaj Auto",
-        achievement: "Grand Finalists",
-        description:
-          "Evolve, MANIT Bhopal, advanced to the 5G Hackathon finals, ranked 45th in RISC-V, and made the C2S quarterfinals.",
-        year: "2024",
-        level: "National",
-        icon: <Star className="w-6 h-6" />,
-        image: "/Achievement/bajaj.jpg",
-      },
-      {
-        title: "Triumph 24 - Quizzard Championship",
-        organization: "प्रभोत्सव'24",
-        achievement: "Top 3 Positions",
-        description:
-          "EVOLVE dominated Quizzard 2024, securing top three ranks with sharp knowledge and research skills. Their teamwork, adaptability, and versatility proved innovative thinkers.",
-        year: "2024",
-        level: "National",
-        icon: <Trophy className="w-6 h-6" />,
-        image:
-          "https://res.cloudinary.com/deblyam9n/image/upload/v1739532116/triumph_wwinners_certificate_and_trophies_tljmkr.jpg",
-      },
-      {
-        title: "Smart Innovate Hackathon",
-        organization: "Robu",
-        achievement: "Winners",
-        description:
-          " A team from Evolve took 1st place in the Smart Innovate Hackathon 2025, winning a ₹3,000 prize for their impressive teamwork and innovation.",
-        year: "2024",
-        level: "State",
-        icon: <Trophy className="w-6 h-6" />,
-        image: "/Achievement/smart_innovate.webp",
-      },
-      {
-        title: "Robu Creato 3.0",
-        organization: "Robu",
-        achievement: "Winners",
-        description:
-          "A team from Evolve achieved a notable 3rd place in the Robu Creato 3.0 online project-building competition, winning a ₹4000 cash prize and showcasing their creativity and skills.",
-        year: "2024",
-        level: "State",
-        icon: <Award className="w-6 h-6" />,
-        image: "/Achievement/robu.jpeg",
-      },
-      {
-        title: "Sagar Fiesta",
-        organization: "Sagar Institute of Science and Technology Bhopal",
-        achievement: "Winner",
-        description:
-          "Team Evolve triumphed at the SiSTec competition, clinching a victory in the Electro-Spark Category and earning a Special mention in the Ideathon Category, showcasing their technical ingenuity and versatility.",
-        year: "2024",
-        level: "State",
-        icon: <Trophy className="w-6 h-6" />,
-        image: "/Achievement/sagar_fiesta.jpg",
-      },
-    ];
-
+  const achievements = [
+    {
+      title: "Gujarat Robofest 4.0",
+      organization: "Gujarat Robofest",
+      achievement: "Grand Finale Winners",
+      description:
+        "Two teams from Evolve, the Fun Robotics & Maze Solving Robot team and the Swarm Robot team, advanced to the ROBOFEST Gujarat 4.0 Grand Finale, winning a ₹2 Lakh cash prize per team for their technical prowess.",
+      year: "2024",
+      level: "National",
+      icon: <Award className="w-6 h-6" />,
+      image: "/Achievement/guj_robofest.png",
+    },
+    {
+      title: "ISRO-IROC",
+      organization: "ISRO",
+      achievement: "First Round Qualified",
+      description:
+        "EVOLVE cleared IROC’s first round, demonstrating robotics and design expertise, proving international competitiveness, technical strength, and readiness for advanced global challenges.",
+      year: "2024",
+      level: "International",
+      icon: <Target className="w-6 h-6" />,
+      image: "/projects/swarm_drones.jpg",
+    },
+    {
+      title: "TATA Technologies InnoVent",
+      organization: "TATA Technologies",
+      achievement: "National Finalists",
+      description:
+        "EVOLVE reached InnoVent national finals with logistics management innovation, recognized for efficiency and practicality, placing members among India’s finest innovators and visionaries.",
+      year: "2024",
+      level: "National",
+      icon: <Star className="w-6 h-6" />,
+      image: "/Achievement/tata_innovista.avif",
+    },
+    {
+      title: "5G Innovation Hackathon",
+      organization:
+        " Department of Telecommunication, Ministry of Communication (Government of India)",
+      achievement: "Grand Finalists",
+      description:
+        "Evolve, MANIT Bhopal, advanced to the 5G Hackathon finals, ranked 45th in RISC-V, and made the C2S quarterfinals.",
+      year: "2024",
+      level: "National",
+      icon: <Star className="w-6 h-6" />,
+      image: "/Achievement/5G_Hackathon.jpg",
+    },
+    {
+      title: "Bajaj Torq and Ohm",
+      organization: "Bajaj Auto",
+      achievement: "Grand Finalists",
+      description:
+        "Evolve, MANIT Bhopal, advanced to the 5G Hackathon finals, ranked 45th in RISC-V, and made the C2S quarterfinals.",
+      year: "2024",
+      level: "National",
+      icon: <Star className="w-6 h-6" />,
+      image: "/Achievement/bajaj.jpg",
+    },
+    {
+      title: "Triumph 24 - Quizzard Championship",
+      organization: "प्रभोत्सव'24",
+      achievement: "Top 3 Positions",
+      description:
+        "EVOLVE dominated Quizzard 2024, securing top three ranks with sharp knowledge and research skills. Their teamwork, adaptability, and versatility proved innovative thinkers.",
+      year: "2024",
+      level: "National",
+      icon: <Trophy className="w-6 h-6" />,
+      image:
+        "https://res.cloudinary.com/deblyam9n/image/upload/v1739532116/triumph_wwinners_certificate_and_trophies_tljmkr.jpg",
+    },
+    {
+      title: "Smart Innovate Hackathon",
+      organization: "Robu",
+      achievement: "Winners",
+      description:
+        " A team from Evolve took 1st place in the Smart Innovate Hackathon 2025, winning a ₹3,000 prize for their impressive teamwork and innovation.",
+      year: "2024",
+      level: "State",
+      icon: <Trophy className="w-6 h-6" />,
+      image: "/Achievement/smart_innovate.webp",
+    },
+    {
+      title: "Robu Creato 3.0",
+      organization: "Robu",
+      achievement: "Winners",
+      description:
+        "A team from Evolve achieved a notable 3rd place in the Robu Creato 3.0 online project-building competition, winning a ₹4000 cash prize and showcasing their creativity and skills.",
+      year: "2024",
+      level: "State",
+      icon: <Award className="w-6 h-6" />,
+      image: "/Achievement/robu.jpeg",
+    },
+    {
+      title: "Sagar Fiesta",
+      organization: "Sagar Institute of Science and Technology Bhopal",
+      achievement: "Winner",
+      description:
+        "Team Evolve triumphed at the SiSTec competition, clinching a victory in the Electro-Spark Category and earning a Special mention in the Ideathon Category, showcasing their technical ingenuity and versatility.",
+      year: "2024",
+      level: "State",
+      icon: <Trophy className="w-6 h-6" />,
+      image: "/Achievement/sagar_fiesta.jpg",
+    },
+  ];
 
   return (
     <motion.section

@@ -45,7 +45,7 @@ export const PreFinalYear = [
     name: "Shantanu Chouksey",
     instagram: "https://www.instagramgram.com/anantsrivastava23/",
     linkedin: "https://www.linkedin.com/in/shantanu-chouksey-30535a289/",
-    position: "President",
+    position: "Coordinator",
   },
   // 2. Vice President
   {
@@ -56,7 +56,7 @@ export const PreFinalYear = [
     instagram:
       "https://www.instagram.com/kayy._.tea?utm_source=ig_web_button_share_sheet&igsh=cjV4YW4zNHAxbnJ1",
     linkedin: "https://www.linkedin.com/in/ktapadia/",
-    position: "Vice President",
+    position: "Co-Coordinator",
   },
   // 3. Head of Operations
   {
