@@ -65,6 +65,28 @@ const Card = (props) => (
 const AchievementsSection = () => {
   const achievements = [
     {
+      title: "Smart India Hackathon 2025",
+      organization: "Ministry of Education",
+      achievement: "Grand Finalist",
+      description:
+        "Our team progressed to the National Level as Finalists by successfully qualifying in one of the problem statements provided by AICTE. We were selected after rigorous evaluation from over 500+ submissions, marking a significant achievement at the national stage.",
+      year: "2025",
+      level: "National",
+      icon: <Award className="w-6 h-6" />,
+      image: "/Achievement/sih.jpeg",
+    },
+    {
+      title: "Gujarat Robofest 5.0",
+      organization: "Gujarat Robofest",
+      achievement: "Grand Finalist",
+      description:
+        "A team from Evolve, the Ornithopter team , become the ROBOFEST Gujarat 5.0 Grand Finalist with their technical prowess.",
+      year: "2025",
+      level: "National",
+      icon: <Award className="w-6 h-6" />,
+      image: "/Achievement/robofest_5.jpeg",
+    },
+    {
       title: "Gujarat Robofest 4.0",
       organization: "Gujarat Robofest",
       achievement: "Grand Finale Winners",
