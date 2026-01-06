@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { Linkedin, Instagram, Mail } from "lucide-react";
+import { Linkedin, Instagram, Github } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
 
@@ -20,14 +20,13 @@ const Card = ({ member }) => {
       transition={{ duration: 0.2, ease: "easeOut" }}
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
-      className="relative bg-neutral-800 rounded-2xl overflow-hidden md:w-80 w-80 md:h-100 max-w-screen group cursor-pointer transition-shadow duration-200 opacity-100"
+      className="relative bg-neutral-800 rounded-2xl overflow-hidden md:w-92 w-80 md:h-100 max-w-screen group cursor-pointer transition-shadow duration-200 opacity-100"
       style={{
         boxShadow: isHovered
           ? "0 20px 40px -10px rgba(28, 167, 124, 0.2), 0 0 0 1px rgba(28, 167, 124, 0.1)"
           : "0 8px 20px -5px rgba(0, 0, 0, 0.4)",
       }}
     >
-      {/* Photo Section */}
       <div className="relative h-80 overflow-hidden">
         <Image
           fill={true}
@@ -35,21 +34,19 @@ const Card = ({ member }) => {
           alt={member.name}
           className="w-full h-full object-cover transition-transform duration-200 hover:scale-105"
         />
-
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
         <div className="absolute bottom-3 left-3 right-3">
           <h3 className="text-white font-bold text-lg leading-tight drop-shadow-lg">
             {member.name.trim()}
           </h3>
           {member.role && (
-            <p className="text-gray-200 text-sm opacity-90">{member.role}</p>
+            <p className="text-green-400 text-sm">{member.role}</p>
           )}
         </div>
       </div>
 
       <div className="md:px-2 px-2 h-20 flex flex-col justify-center">
-        <div className="grid grid-cols-2 gap-5">
+        <div className="grid grid-cols-3 gap-5">
           <button
             onClick={() => handleSocialClick(member.linkedin)}
             className="flex flex-col items-center p-2 bg-[#0077b5]/15 hover:bg-[#0077b5]/25 rounded-xl border border-[#0077b5]/20 hover:border-[#0077b5]/40 transition-all duration-200 group/btn hover:scale-105"
@@ -64,6 +61,14 @@ const Card = ({ member }) => {
           >
             <Instagram className="w-4 h-4 text-pink-400 mb-0.5 group-hover/btn:scale-110 transition-transform duration-150" />
             <span className="text-xs text-white font-medium">Instagram</span>
+          </button>
+
+          <button
+            onClick={() => handleSocialClick(member.github)}
+            className="flex flex-col items-center p-2 bg-gradient-to-br from-green-500/15 to-green-500/20 hover:from-green-500/25 hover:to-green-500/35 rounded-xl border border-green-500/20 hover:border-green-500/40 transition-all duration-200 group/btn hover:scale-105"
+          >
+            <Github className="w-4 h-4 text-green-400 mb-0.5 group-hover/btn:scale-110 transition-transform duration-150" />
+            <span className="text-xs text-white font-medium">Github</span>
           </button>
         </div>
       </div>

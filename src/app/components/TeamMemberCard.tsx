@@ -21,12 +21,11 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => {
 
   return (
     <div className="group relative w-full min-w-[300px] flex-shrink-0 overflow-hidden rounded-[1.5rem] bg-[#1c1c1e] p-2.5 shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-green-500/20">
-      {/* Upper Image Section */}
+
       <div className="relative flex aspect-[3/4] w-full flex-col items-center justify-end overflow-hidden rounded-xl bg-[#252527]">
-        {/* Background Circle Effect - using Evolve brand green */}
+        
         <div className="absolute left-1/2 top-[40%] h-48 w-48 -translate-x-1/2 -translate-y-1/2 rounded-full bg-green-500 opacity-100 shadow-[0_0_30px_rgba(0,0,0,0.3)] transition-transform duration-500 group-hover:scale-110"></div>
 
-        {/* Optional: A secondary blurred glow for depth */}
         <div className="absolute left-1/2 top-[40%] h-48 w-48 -translate-x-1/2 -translate-y-1/2 rounded-full bg-green-500 opacity-40 blur-2xl filter"></div>
 
         {/* Member Image */}
@@ -39,10 +38,8 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => {
           />
         </div>
 
-        {/* Text Overlay Gradient */}
         <div className="absolute bottom-0 left-0 right-0 z-20 h-32 bg-gradient-to-t from-[#1c1c1e] via-[#1c1c1e]/80 to-transparent"></div>
 
-        {/* Name and Position */}
         <div className="absolute bottom-2 z-30 flex w-full flex-col items-start px-3 pb-3">
           <h3 className="text-xl font-black tracking-tight text-white drop-shadow-md text-left leading-tight">
             {name}
@@ -55,7 +52,6 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => {
         </div>
       </div>
 
-      {/* Social Actions Section */}
       <div className="mt-2.5 grid grid-cols-2 gap-2.5">
         {linkedin && (
           <a

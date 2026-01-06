@@ -11,6 +11,7 @@ const developers = [
     src: "/devs/aadi.jpg",
     linkedin: "https://www.linkedin.com/in/aadi-jain-42a765319/",
     instagram: "https://www.instagram.com/aadijaintkg/?hl=en",
+    github: "https://github.com/AadiJainTikamgarh",
     role: "Full Stack Developer",
   },
   {
@@ -18,6 +19,7 @@ const developers = [
     src: "/devs/yatharth.jpg",
     linkedin: "https://www.linkedin.com/in/yatharth-upmanyu-b85781320/",
     instagram: "https://www.instagram.com/yatharthupmanyu/?hl=en",
+    github: "https://github.com/Platypus-coder07",
     role: "Full Stack Developer",
   },
 ];
