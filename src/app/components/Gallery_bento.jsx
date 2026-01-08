@@ -23,14 +23,15 @@ function Gallery_bento() {
             <motion.img
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
-              src="/gallery/image18.jpg"
+              src="/gallery/image35.jpg"
+              className="scale-125"
             />
           </div>
           <div className="flex items-center justify-center rounded-2xl bg-orange-400 text-2xl col-span-2 row-span-2 overflow-hidden border border-green-400">
             <motion.img
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
-              src="/gallery/image5.jpg"
+              src="/gallery/image27.jpg"
               className="w-full h-full"
             />
           </div>
@@ -53,14 +54,14 @@ function Gallery_bento() {
             <motion.img
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
-              src="/gallery/image21_1.jpg"
+              src="/gallery/image30.jpg"
             />
           </div>
           <div className="flex items-center justify-center rounded-2xl bg-orange-400 text-2xl col-span-3 row-span-1 overflow-hidden border border-green-400">
             <motion.img
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
-              src="/gallery/image23_1.jpg"
+              src="/gallery/image32.jpeg"
               className="size-fit object-bottom"
             />
           </div>
@@ -68,7 +69,7 @@ function Gallery_bento() {
             <motion.img
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
-              src="/gallery/image22.jpg"
+              src="/gallery/image29.jpg"
             />
           </div>
         </div>
