@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+// import image27 from "@/pub;///"
 function Gallery_bento() {
   return (
     <>
@@ -10,7 +11,7 @@ function Gallery_bento() {
         Highlights from our unforgettable experiences
       </div>
       <div className="w-screen bg-[#121212] px-5 overflow-x-scroll pb-30">
-        <div className="grid h-[100vh] gap-3 grid-cols-6 grid-rows-4 w-[200vh] md:w-[88vw] md:h-[85vh] bg-neutral-950 mx-auto overflow-x-scroll">
+        <div className="grid h-[100vh] gap-3 grid-cols-6 grid-rows-4 w-[200vh] md:w-[92vw] md:h-[90vh] bg-neutral-950 mx-auto overflow-x-scroll">
           <div className="flex items-center justify-center rounded-2xl bg-orange-400 text-2xl col-span-2 row-span-2 overflow-hidden border border-green-400">
             <motion.img
               whileHover={{ scale: 1.05 }}
@@ -31,7 +32,7 @@ function Gallery_bento() {
             <motion.img
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
-              src="/gallery/image27.jpg"
+              src="/image27.JPG"
               className="w-full h-full"
             />
           </div>
@@ -54,7 +55,7 @@ function Gallery_bento() {
             <motion.img
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
-              src="/gallery/image30.jpg"
+              src="/image30.JPG"
             />
           </div>
           <div className="flex items-center justify-center rounded-2xl bg-orange-400 text-2xl col-span-3 row-span-1 overflow-hidden border border-green-400">
@@ -62,14 +63,14 @@ function Gallery_bento() {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
               src="/gallery/image32.jpeg"
-              className="size-fit object-bottom"
+              className="object-cover"
             />
           </div>
           <div className="flex items-center justify-center rounded-2xl bg-orange-400 text-2xl col-span-2 row-span-1 overflow-hidden border border-green-400">
             <motion.img
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
-              src="/gallery/image29.jpg"
+              src="/image29.JPG"
             />
           </div>
         </div>
