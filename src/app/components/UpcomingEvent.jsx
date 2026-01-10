@@ -27,25 +27,25 @@ function UpcomingEvent() {
       </motion.div>
       <div className="flex items-center justify-center">
         <Showcase_card
-          name="EV Day 2025"
-          desciption={`EV Day 2025 showcases the future of electric mobility through expos,
-            industry talks, poster presentations, and problem-solving challenges
-            like TechTrack 2.0.`}
-          date={`Sep 09, 2025`}
+          name="WATER ROBO RACE"
+          desciption={`EVOLVE brings you the thrilling Water Robo Race Competition at Techno Search, MANIT Bhopal, where innovation meets speed on water.
+          Design, build, and race your robot while testing your speed, control, and creativity. Let your robot rule the water!`}
+          date={`Jan 25, 2026`}
           venue={`MANIT, Bhopal`}
-          brocureLink={`https://drive.google.com/file/d/1Mk7IWYwKjp-r-nHNI3SNqFhgD1C2Pkna/view?usp=sharing`}
-          image={`/Events/vidyut_25.jpg`}
-          button_name={`View Brochure`}
+          brocureLink={`https://unstop.com/o/GWpUnsB?lb=qSfy0XDj&utm_medium=Share&utm_source=ayushsha1571&utm_campaign=Competitions`}
+          image={`/Events/water_robo_race.jpeg`}
+          button_name={`Register Now`}
         />
       </div>
       <div className="flex items-center justify-center">
         <Showcase_card
-          name="Tech Track 2.0"
-          desciption={`Tech Track 2.0 by EVOLVE NIT Bhopal brings real-world problem solving, prizes worth ₹18,000, internships at Vaayu Robotics, and ministry-backed recognition — your chance to innovate and make an impact!`}
-          date={`Sep 09, 2025`}
+          name="BATTSIM"
+          desciption={`EVOLVE challenges you to charge up your innovation 💡 with the Battery Design Challenge — an interdisciplinary quest to design the next generation of energy storage solutions.
+          Don’t miss this opportunity to innovate, compete, and win big!`}
+          date={`Jan 24, 2026`}
           venue={`MANIT, Bhopal`}
-          brocureLink={`https://unstop.com/o/Bkpe9n4?lb=zFRjMLjF&utm_medium=Share&utm_source=WhatsApp`}
-          image={`/Events/tech_track.jpg`}
+          brocureLink={`https://unstop.com/o/QghE9Ok?lb=qSfy0XDj&utm_medium=Share&utm_source=ayushsha1571&utm_campaign=Competitions`}
+          image={`/Events/batsim.jpeg`}
           button_name={`Register Now`}
         />
       </div>
