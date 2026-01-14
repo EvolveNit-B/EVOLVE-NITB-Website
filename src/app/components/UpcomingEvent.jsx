@@ -35,6 +35,8 @@ function UpcomingEvent() {
           brocureLink={`https://unstop.com/o/GWpUnsB?lb=qSfy0XDj&utm_medium=Share&utm_source=ayushsha1571&utm_campaign=Competitions`}
           image={`/Events/water_robo_race.jpeg`}
           button_name={`Register Now`}
+          contact_name={`Rudransh`}
+          contact_number={`9589749994`}
         />
       </div>
       <div className="flex items-center justify-center">
@@ -47,6 +49,8 @@ function UpcomingEvent() {
           brocureLink={`https://unstop.com/o/QghE9Ok?lb=qSfy0XDj&utm_medium=Share&utm_source=ayushsha1571&utm_campaign=Competitions`}
           image={`/Events/batsim.jpeg`}
           button_name={`Register Now`}
+          contact_name={`Sanjeet`}
+          contact_number={`997731348`}
         />
       </div>
     </div>

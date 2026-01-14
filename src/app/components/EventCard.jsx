@@ -3,13 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 
-function EventCard({
-  image,
-  event_name,
-  event_desc,
-  tags = [],
-  brochureLink,
-}) {
+function EventCard({ image, event_name, event_desc, tags = [], brochureLink }) {
   const route = useRouter();
   const Tag = ({ tag }) => {
     return (
@@ -24,7 +18,7 @@ function EventCard({
       <img
         src={image}
         alt={event_name}
-        className="w-full h-1/2 rounded-lg mb-4 object-cover"
+        className="w-full h-1/2 rounded-lg mb-4 object-contain bg-black/20"
       />
       <h1 className="group-hover:text-[#02fd07] text-neutral-50 text-2xl font-bold mb-2">
         {event_name}
@@ -44,7 +38,7 @@ function EventCard({
         whileHover={{
           scale: 1.05,
         }}
-        onTap={{
+        whileTap={{
           scale: 0.95,
         }}
         className="mt-3 mb-1 rounded-lg bg-[#02fd07] px-3 text-lg font-bold py-2"
