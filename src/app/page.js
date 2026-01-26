@@ -47,7 +47,7 @@ export default function Home() {
         <Navbar />
         <HeroSection />
       </div>
-      <UpcomingEvent />
+      {/* <UpcomingEvent /> */}
       <AboutSection />
       <AchievementsSection />
       <Gallery_bento />
