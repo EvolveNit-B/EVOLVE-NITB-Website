@@ -34,8 +34,8 @@ export const projects = [
     description:
       "A connected e-bicycle featuring a 36V–42V battery, ESP32-based telemetry, GPS tracking, and Pedal Assist Sensor. Delivers up to 40 km/h speed, 35–40 km range, solar charging, and mobile app integration.",
     icon: <Zap className="w-6 h-6" />,
-    tags: ["IoT", "ESP32", "Electric Vehicle", "Solar"],
-    image: "/projects/ev_cycle.jpg",
+    tags: ["IoT", "ESP32", "Electric Vehicle"],
+    image: "/projects/E-Bicycle.jpeg",
     gradient: "from-yellow-500/20 to-orange-500/20",
     people: [
       "Yash Kumar Atlani",
@@ -43,6 +43,7 @@ export const projects = [
       "Aman Sharma",
       "Anant Shrivastva",
       "Abhinav Chawda",
+      "Aadi Jain"
     ],
     longDescription:
       "This e-bicycle integrates hardware and IoT components like ESP32 for real-time data acquisition, including speed, battery level, and location via GPS. It features a Pedal Assist System (PAS) for energy-efficient riding, along with a regenerative braking system and solar charging to extend battery life. The app interface provides live tracking, route history, and performance analytics, making it a sustainable and smart commuting option.",
