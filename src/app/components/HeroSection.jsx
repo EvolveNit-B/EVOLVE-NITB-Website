@@ -13,8 +13,6 @@ const HeroSection = () => {
   }, []);
   return (
     <section className="relative w-full min-h-[100vh] bg-[#121212] overflow-hidden flex flex-col justify-center items-center px-6 py-24 text-white text-center">
-
-
       <motion.img
         src="/Manit_logo.png"
         alt="MANIT Logo"
@@ -39,7 +37,14 @@ const HeroSection = () => {
         transition={{ duration: 1 }}
         className="z-10 text-3xl md:text-5xl font-extrabold leading-tight mb-6"
       >
-        Evolve The Technical Club of <br />
+        <span className="z-10 text-3xl md:text-7xl font-extrabold leading-tight mb-6">
+          Evolve
+        </span>
+        <br />{" "}
+        <span className="z-10 text-2xl md:text-5xl font-extrabold leading-tight mb-6">
+          The interdisciplinary Technical Club of
+        </span>{" "}
+        <br />
         <span className="text-green-500">NIT Bhopal</span>
       </motion.h1>
 
@@ -47,7 +52,7 @@ const HeroSection = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2, delay: 0.3 }}
-        className="z-10 text-gray-300 text-lg md:text-xl max-w-2xl mb-8"
+        className="z-10 text-gray-300 text-lg md:text-xl max-w-2xl md:mb-30 mb-10"
       >
         At EVOLVE, we combine creativity with technology to push the limits of
         innovation. From drones and robotics to AI, we’re shaping tomorrow,
