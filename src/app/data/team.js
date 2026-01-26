@@ -36,6 +36,37 @@ export const Founder = [
     position: "Founder",
   },
 ];
+
+export const FinalYear = [
+  {
+    id: 0,
+    value: 1,
+    src: "/Team/Final_Year/AkshatAgarwal.jpg",
+    name: "Akshat Agarwal",
+    instagram: "https://www.instagramgram.com/axxhat_04/",
+    linkedin: "https://www.linkedin.com/in/akshatagarwal01/",
+    position: "President",
+  },
+  {
+    id: 1,
+    value: 1,
+    src: "/Team/Final_Year/MrAbhinavChawda.jpg",
+    name: "Abhinav Chawda",
+    instagram: "https://www.instagramgram.com/abhinavchawda/",
+    linkedin: "https://www.linkedin.com/in/abhinav-chawda/",
+    position: "Vice President",
+  },
+  {
+    id: 2,
+    value: 1,
+    src: "/Team/Final_Year/AnantSrivastava.jpg",
+    name: "Anant Srivastava",
+    instagram: "https://www.instagramgram.com/anantsrivastava23/",
+    linkedin: "https://www.linkedin.com/in/anant-srivastava-88187a276",
+    position: "Vice President",
+  },
+];
+
 export const PreFinalYear = [
   // 1. President
   {

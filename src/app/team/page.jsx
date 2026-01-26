@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import { Founder } from "../data/team";
 import { PreFinalYear } from "../data/team";
+import { FinalYear } from "../data/team";
 import Footer from "../components/Footer";
 const page = () => {
   const containerVariants = {
@@ -55,7 +56,6 @@ const page = () => {
               Our <span className="text-green-500">Founder</span>
             </h2>
           </motion.div>
-
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -73,7 +73,36 @@ const page = () => {
               </motion.div>
             ))}
           </motion.div>
-
+          //
+          <motion.div
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            <hr className="text-white my-5 border border-neutral-700" />
+            <h2 className="md:text-5xl text-4xl font-bold text-green-500 mt-10">
+              Final Year
+            </h2>
+          </motion.div>
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.01 }}
+            className="flex flex-wrap justify-center gap-8 items-start"
+          >
+            {FinalYear.map((member, index) => (
+              <motion.div
+                key={index}
+                variants={cardVariants}
+                className="flex-shrink-0"
+              >
+                <TeamMemberCard member={member} />
+              </motion.div>
+            ))}
+          </motion.div>
+          //
           <motion.div
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
