@@ -1,5 +1,30 @@
 export const eventData = [
   {
+    id: -1,
+    image: "/Events/batsim.jpeg",
+    event_name: "BATTSIM",
+    event_desc:
+      "EVOLVE Battery Design Challenge invites you to innovate the future of energy storage. Design next-generation battery solutions, compete with top talent, and win exciting rewards.",
+    tags: [
+      { key: 1, value: "EV Battery" },
+      { key: 2, value: "Simulation" },
+    ],
+    brochureLink: "/Events/batsim.jpeg",
+  },
+  {
+    id: 0,
+    image: "/Events/water_robo_race.jpeg",
+    event_name: "Water Robot Race",
+    event_desc:
+      "Get ready for an electrifying competition where teams design and build robots capable of navigating water-based challenges. It's a race against time and water!",
+    tags: [
+      { key: 1, value: "Robotics" },
+      { key: 2, value: "Competition" },
+      { key: 3, value: "Water" },
+    ],
+    brochureLink: "/Events/water_robo_race.jpeg",
+  },
+  {
     id: 1,
     image: "/Events/vidyut_25.jpg",
     event_name: "EV Day 2025",
