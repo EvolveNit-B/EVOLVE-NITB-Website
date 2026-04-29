@@ -1,16 +1,10 @@
-// import { Roboto } from "next/font/google";
 import "./globals.css";
 import ScrollToTop from "./components/Scroll";
-import {SpeedInsights} from '@vercel/speed-insights/next'
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from "@vercel/analytics/next";
 
-// const roboto = Roboto({
-//   subsets: ["latin"],
-//   weight: ["300", "400", "500", "700", "800"],
-//   variable: "--font-roboto",
-// });
-
 export const metadata = {
+  metadataBase: new URL("https://evolve.nitb.in"),
   title: { default: "Evolve - NIT Bhopal", template: "%s | EVOLVE NITB" },
   description:
     "Evolve is an interdisciplinary technical club at Maulana Azad National Institute of Technology, Bhopal, driven by hands-on learning and innovative problem-solving. It welcomes students passionate about robotics, mechanical, electrical, and software development, and has earned recognition beyond campus with numerous prizes and achievements.",
@@ -44,7 +38,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_IE",
-    url: 'https"//evolve.nitb.in',
+    url: "https://evolve.nitb.in",
     siteName: "Evolve - NIT Bhopal",
     description:
       "Evolve is an interdisciplinary technical club at Maulana Azad National Institute of Technology, Bhopal, driven by hands-on learning and innovative problem-solving. It welcomes students passionate about robotics, mechanical, electrical, and software development, and has earned recognition beyond campus with numerous prizes and achievements.",
@@ -60,10 +54,10 @@ export const metadata = {
 };
 
 const jsonLd = {
-  "@context": "https://evolve.nitb.in",
-  "@type": "Organization",
+  "@context": "https://schema.org",
+  "@type": "WebSite",
   name: "Evolve - NIT Bhopal",
-  url: "https://evolve.nitb.in/",
+  url: "https://evolve.nitb.in",
   logo: "https://evolve.nitb.in/Logo/Evolve-Logo-circle.ico",
   sameAs: [
     "https://www.linkedin.com/company/evolve-nit-bhopal/",
@@ -75,24 +69,22 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>Evolve - NIT Bhopal</title>
         <meta
           name="google-site-verification"
           content="Y41EaDaFLEO5saXVvj-AZEwQMfnT4QoxRaS3RBz0-KU"
         />
+        <meta
+          name="google-site-verification"
+          content="oW8s8LT-p6z2q1uFqVqK8ebu_YU7s0Q41aDSJN3Y9z0"
+        />
+        <link rel="canonical" href="https://evolve.nitb.in/" />
+        <link rel="icon" href="https://evolve.nitb.in/Logo/favicon.ico" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
           }}
         />
-        <link rel="canonical" href="https://evolve.nitb.in/" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-          name="google-site-verification"
-          content="oW8s8LT-p6z2q1uFqVqK8ebu_YU7s0Q41aDSJN3Y9z0"
-        />
-        <link rel="icon" href="https://evolve.nitb.in/Logo/favicon.ico" />
       </head>
       <body className="antialiased h-dvh w-full">
         {children}
