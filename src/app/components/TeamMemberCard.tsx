@@ -7,8 +7,8 @@ interface TeamMember {
   value: number;
   src: string;
   name: string;
-  instagram: string;
-  linkedin: string;
+  instagram?: string;
+  linkedin?: string;
   position: string;
 }
 
@@ -38,49 +38,67 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => {
           />
         </div>
 
-        <div className="absolute bottom-0 left-0 right-0 z-20 h-32 bg-gradient-to-t from-[#1c1c1e] via-[#1c1c1e]/80 to-transparent"></div>
+        {(linkedin || instagram) && (
+          <>
+            <div className="absolute bottom-0 left-0 right-0 z-20 h-32 bg-gradient-to-t from-[#1c1c1e] via-[#1c1c1e]/80 to-transparent"></div>
+            <div className="absolute bottom-2 z-30 flex w-full flex-col items-start px-3 pb-3">
+              <h3 className="text-xl font-black tracking-tight text-white drop-shadow-md text-left leading-tight">
+                {name}
+              </h3>
+              {position && (
+                <p className="mt-0.5 text-xs font-semibold uppercase tracking-widest text-green-400 text-left">
+                  {position}
+                </p>
+              )}
+            </div>
+          </>
+        )}
+      </div>
 
-        <div className="absolute bottom-2 z-30 flex w-full flex-col items-start px-3 pb-3">
-          <h3 className="text-xl font-black tracking-tight text-white drop-shadow-md text-left leading-tight">
+      {!(linkedin || instagram) && (
+        <div className="mt-3 flex flex-col items-start px-3 pb-2 z-30">
+          <h3 className="text-xl font-black tracking-tight text-white text-left leading-tight transition-colors duration-300 group-hover:text-green-400">
             {name}
           </h3>
           {position && (
-            <p className="mt-0.5 text-xs font-semibold uppercase tracking-widest text-green-400 text-left">
+            <p className="mt-1 text-xs font-semibold uppercase tracking-widest text-green-400 text-left">
               {position}
             </p>
           )}
         </div>
-      </div>
+      )}
 
-      <div className="mt-2.5 grid grid-cols-2 gap-2.5">
-        {linkedin && (
-          <a
-            href={linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group/btn flex flex-col items-center justify-center rounded-xl border border-white/5 bg-[#2c2c2e] py-3 transition-all duration-300 hover:border-blue-500/50 hover:bg-[#1a2c3d]"
-          >
-            <LinkedinIcon className="mb-1 h-5 w-5 text-[#0077b5] transition-transform group-hover/btn:scale-110" />
-            <span className="text-[10px] font-medium text-gray-400 group-hover/btn:text-white">
-              LinkedIn
-            </span>
-          </a>
-        )}
+      {(linkedin || instagram) && (
+        <div className="mt-2.5 grid grid-cols-2 gap-2.5">
+          {linkedin && (
+            <a
+              href={linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group/btn flex flex-col items-center justify-center rounded-xl border border-white/5 bg-[#2c2c2e] py-3 transition-all duration-300 hover:border-blue-500/50 hover:bg-[#1a2c3d]"
+            >
+              <LinkedinIcon className="mb-1 h-5 w-5 text-[#0077b5] transition-transform group-hover/btn:scale-110" />
+              <span className="text-[10px] font-medium text-gray-400 group-hover/btn:text-white">
+                LinkedIn
+              </span>
+            </a>
+          )}
 
-        {instagram && (
-          <a
-            href={instagram}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group/btn flex flex-col items-center justify-center rounded-xl border border-white/5 bg-[#2c2c2e] py-3 transition-all duration-300 hover:border-pink-500/50 hover:bg-[#3d1a2c]"
-          >
-            <InstagramIcon className="mb-1 h-5 w-5 text-[#E4405F] transition-transform group-hover/btn:scale-110" />
-            <span className="text-[10px] font-medium text-gray-400 group-hover/btn:text-white">
-              Instagram
-            </span>
-          </a>
-        )}
-      </div>
+          {instagram && (
+            <a
+              href={instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group/btn flex flex-col items-center justify-center rounded-xl border border-white/5 bg-[#2c2c2e] py-3 transition-all duration-300 hover:border-pink-500/50 hover:bg-[#3d1a2c]"
+            >
+              <InstagramIcon className="mb-1 h-5 w-5 text-[#E4405F] transition-transform group-hover/btn:scale-110" />
+              <span className="text-[10px] font-medium text-gray-400 group-hover/btn:text-white">
+                Instagram
+              </span>
+            </a>
+          )}
+        </div>
+      )}
     </div>
   );
 };

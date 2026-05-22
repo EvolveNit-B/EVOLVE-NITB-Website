@@ -3,7 +3,7 @@ import React from "react";
 import TeamMemberCard from "../components/TeamMemberCard";
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
-import { Founder } from "../data/team";
+import { Founder, Faculty } from "../data/team";
 import { PreFinalYear } from "../data/team";
 import { FinalYear } from "../data/team";
 import Footer from "../components/Footer";
@@ -45,13 +45,41 @@ const page = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <p className="text-gray-400 text-center md:mx-[6vw] lg:mx-[15vw] text-lg tracking-tight md:text-[18px] py-4 px-3">
+            <p className="text-gray-400 text-center md:mx-[6vw] lg:mx-[15vw] text-lg tracking-tight md:text-[18px] py-4 px-3 mb-10">
               Meet the dedicated individuals behind Evolve — a diverse team of
               innovators, learners, and changemakers who share one vision: to
               create, inspire, and drive meaningful impact. Each member brings
               unique skills and passion, working together to turn ideas into
               reality.
             </p>
+            <h2 className="md:text-5xl text-4xl font-bold text-white">
+              Our <span className="text-green-500">Faculty</span>
+            </h2>
+          </motion.div>
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.1 }}
+            className="flex flex-wrap justify-center gap-8 items-start mb-16"
+          >
+            {Faculty && Faculty.map((member, index) => (
+              <motion.div
+                key={index}
+                variants={cardVariants}
+                className="flex-shrink-0"
+              >
+                <TeamMemberCard member={member} />
+              </motion.div>
+            ))}
+          </motion.div>
+          <motion.div
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            <hr className="text-white my-5 border border-neutral-700 mb-10" />
             <h2 className="md:text-5xl text-4xl font-bold text-white">
               Our <span className="text-green-500">Founder</span>
             </h2>

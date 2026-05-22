@@ -1,3 +1,27 @@
+export const Faculty = [
+  {
+    id: 0,
+    value: 1,
+    src: "/Team/Faculty/Shailendra_jain_sir.webp",
+    name: "Dr Shailendra Jain",
+    position: "Faculty Coordinator"
+  },
+  {
+    id: 1,
+    value: 1,
+    src: "/Team/Faculty/Amit_Ojha_sir.jpg",
+    name: "Dr Amit Ojha",
+    position: "Faculty Advisor"
+  },
+  {
+    id: 2,
+    value: 1,
+    src: "/Team/Faculty/more_raju_sir.webp",
+    name: "Dr More Raju",
+    position: "Faculty Advisor"
+  }
+]
+
 export const Founder = [
   {
     id: 0,
