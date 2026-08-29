@@ -27,19 +27,18 @@ function UpcomingEvent() {
       </motion.div>
       <div className="flex items-center justify-center">
         <Showcase_card
-          name="WATER ROBO RACE"
-          desciption={`EVOLVE brings you the thrilling Water Robo Race Competition at Techno Search, MANIT Bhopal, where innovation meets speed on water.
-          Design, build, and race your robot while testing your speed, control, and creativity. Let your robot rule the water!`}
-          date={`Jan 25, 2026`}
+          name="TechTrack 3.0"
+          desciption={`EVOLVE brings you TechTrack 3.0, an exciting EV-focused Machine Learning case battle at MANIT Bhopal, where data meets innovation. Analyze an electric vehicle dataset, build a model to predict EV range, and put your ML and problem-solving skills to the test. Turn data into predictions and let your model lead the way!`}
+          date={`9th Sept`}
           venue={`MANIT, Bhopal`}
-          brocureLink={`https://unstop.com/o/GWpUnsB?lb=qSfy0XDj&utm_medium=Share&utm_source=ayushsha1571&utm_campaign=Competitions`}
-          image={`/Events/water_robo_race.jpeg`}
+          brocureLink={`https://unstop.com/competitions/techtrack-3o--1743784`}
+          image={`/Events/tech_track_2026.png`}
           button_name={`Register Now`}
-          contact_name={`Rudransh`}
-          contact_number={`9589749994`}
+          contact_name={`Yatharth Upmanyu`}
+          contact_number={`9522202434`}
         />
       </div>
-      <div className="flex items-center justify-center">
+      {/* <div className="flex items-center justify-center">
         <Showcase_card
           name="BATTSIM"
           desciption={`EVOLVE challenges you to charge up your innovation 💡 with the Battery Design Challenge — an interdisciplinary quest to design the next generation of energy storage solutions.
@@ -52,7 +51,7 @@ function UpcomingEvent() {
           contact_name={`Sanjeet`}
           contact_number={`997731348`}
         />
-      </div>
+      </div> */}
     </div>
   );
 }
