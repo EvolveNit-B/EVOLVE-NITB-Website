@@ -8,7 +8,7 @@ import Card from "./TeamCard";
 const developers = [
   {
     name: "Aadi Kumar Jain",
-    src: "/devs/aadi.jpg",
+    src: "/devs/aadi.jpeg",
     linkedin: "https://www.linkedin.com/in/aadi-jain-42a765319/",
     instagram: "https://www.instagram.com/aadijaintkg/?hl=en",
     github: "https://github.com/AadiJainTikamgarh",
